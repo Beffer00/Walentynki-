@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walentynka</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 20%;
+        }
+        h1 {
+            color: #ff3366;
+        }
+        button {
+            background-color: #ff3366;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #ff6699;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff3366;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Czy zostaniesz moją walentynką?</h1>
+        <button onclick="showMessage('Hurra! 🥰')">Tak!</button>
+        <button onclick="showMessage('Może następnym razem 😢')">Nie...</button>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        function showMessage(text) {
+            document.getElementById('message').innerText = text;
+        }
+    </script>
+</body>
+</html>
